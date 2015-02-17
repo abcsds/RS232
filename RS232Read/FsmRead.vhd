@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity FsmRead is  
+entity FsmRead is
     port(
     RST     :   in  std_logic;
     CLK     :   in  std_logic;
@@ -16,7 +16,7 @@ architecture simple of FsmRead is
 
 signal Qp, Qn   : std_logic_vector(3 downto 0);
 
-begin                                
+begin
     combinacional: process(Qp,STR,FBaud)
     begin
         case Qp is
@@ -105,24 +105,24 @@ begin
                 CTRL <= "10";
                 EOR <= "0";
 
-            
-            when others =>   
+
+            when others =>
                 CTRL<= "0000";
                 EOR<= '1';
                 Qn<= "0000";
-            
+
             end case;
-            
+
         end process combinacional;
-        
+
         secuencial: process(RST,CLK)
-        begin  
+        begin
             if(RST='0')then
                 Qp<= "0000";
             elsif(CLK'event and CLK='1')then
                 Qp<= Qn;
-            end if;         
-            
+            end if;
+
         end process secuencial;
-        
+
 end simple;
