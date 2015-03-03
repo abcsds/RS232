@@ -8,56 +8,54 @@ entity RS232Read is
 
     RST     :   in  std_logic;
     CLK     :   in  std_logic;
-    STR     :   in  std_logic;
-    DATARead:   in  std_logic_vector(7 downto 0);
+    Rx      :   in std_logic;
     NBaud   :   in  std_logic_vector(3 downto 0);
 
-    EOR     :   out std_logic;
-    Tx      :   out std_logic
+    Q       :   out  std_logic_vector(7 downto 0);
+    EOR     :   out std_logic
    );
 end RS232Read;
 
 architecture moore of RS232Read is
-signal CTRL    :   std_logic_vector(3 downto 0);
 signal FBaud   :   std_logic;
+signal ENC     :   std_logic;
 
-component BaudRate
-  port(
-    RST   : in  std_logic;
-    CLK   : in  std_logic;
-    NBaud : in  std_logic_vector(3 downto 0); -- Number of Bauds by second
-    FBaud : out std_logic           -- Base frecuency 
-  ); 
+component BaudRateRD is
+	port(
+	RST		:	in	std_logic;
+	CLK		:	in	std_logic;
+	ENC		:	in	std_logic;
+	NBaud	:	in	std_logic_vector(3 downto 0);	-- Number of Bauds by second
+	FBaud	:	out	std_logic						-- Base frecuency
+	);
 end component;
 
-component register_of_displacement
-  port(
-    RST      : in std_logic;
-    CLK      : in std_logic;
-    Rx       : in std_logic;
-    CTRL     : in std_logic_vector(1 downto 0);
-    DATARead : out std_logic_vector(8 downto 0)
-  );
+component FSMRead is
+	port(
+	RST		:	in	std_logic;
+	CLK		:	in 	std_logic;
+	Rx		:	in	std_logic;
+	FBaud	:	in	std_logic;
+	ENC		:	out	std_logic;
+	EOR		:	out	std_logic;
+	LDx		:	out std_logic
+	);
 end component;
 
-component FsmRead is  
-    port(
-    RST     :   in  std_logic;
-    CLK     :   in  std_logic;
-    STR     :   in  std_logic;
-    FBaud   :   in  std_logic;
-    EOR     :   out std_logic;
-    CTRL    :   out std_logic_vector(3 downto 0)
-    );
+component RegSerPar is
+	port(
+	RST		:	in	std_logic;
+	CLK		:	in	std_logic;
+	Rx		:	in	std_logic;
+	LDx		:	in	std_logic;
+	Q		:	out	std_logic_vector(7 downto 0)
+	);
 end component;
 
 begin
 
-    U00 : BaudRate port map(RST,CLK,NBaud,FBaud);
-    U01 : register_of_displacement port map(RST,CLK,Rx,CTRL,DATARead);
-    U02 : FsmRead port map(RST,CLK,STR,FBaud,EOR,CTRL);
- 
+    U00 : FSMRead port map(RST,CLK,Rx,FBaud,ENC,EOR,LDx);
+    U01 : RegSerPar port map(RST,CLK,Rx,LDx,Q);
+    U02 : BaudRateRD port map(RST,CLK,ENC,NBaud,FBaud);
+
 end moore;
-
-
-
