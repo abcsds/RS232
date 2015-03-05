@@ -19,6 +19,7 @@ end RS232Read;
 architecture moore of RS232Read is
 signal FBaud   :   std_logic;
 signal ENC     :   std_logic;
+signal LDx     :   std_logic;
 
 component BaudRateRD is
 	port(
