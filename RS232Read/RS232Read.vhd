@@ -9,6 +9,8 @@ entity RS232Read is
     RST     :   in  std_logic;
     CLK     :   in  std_logic;
     Rx      :   in  std_logic;
+    KI		:	in	std_logic;
+
 
     S       :   out std_logic_vector(13 downto 0)
    );
@@ -69,7 +71,7 @@ end component;
 
 begin
 
-    U00     :   FSMRead port map(RST,CLK,Rx,FBaud,ENC,EOR,LDx);
+    U00     :   FSMRead port map(RST,CLK,Rx,FBaud,KI,ENC,EOR,LDx);
     U01     :   RegSerPar port map(RST,CLK,Rx,LDx,Q);
     U02     :   BaudRateRD port map(RST,CLK,ENC,NBaud,FBaud);
     U03     :   hex_7seg port map(RST,CLK,EOR,Q(3 downto 0),S(6 downto 0));
