@@ -1,0 +1,68 @@
+\hypertarget{class_baud_rate}{}\section{Baud\+Rate Entity Reference}
+\label{class_baud_rate}\index{Baud\+Rate@{Baud\+Rate}}
+
+
+Inheritance diagram for Baud\+Rate\+:
+% FIG 0
+\subsection*{Entities}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_baud_rate_1_1simple}{simple} architecture
+\end{DoxyCompactItemize}
+\subsection*{Libraries}
+ \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_baud_rate_ae4f03c286607f3181e16b9aa12d0c6d4}{I\+E\+E\+E} 
+\end{DoxyCompactItemize}
+\subsection*{Use Clauses}
+ \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_baud_rate_acd03516902501cd1c7296a98e22c6fcb}{std\+\_\+logic\+\_\+1164}   
+\item 
+\hyperlink{class_baud_rate_a0f5ecc6613f63d07f7963a97b1b26095}{std\+\_\+logic\+\_\+arith}   
+\item 
+\hyperlink{class_baud_rate_a598da929e807d58939b47499e8bc9fa8}{std\+\_\+logic\+\_\+unsigned}   
+\end{DoxyCompactItemize}
+\subsection*{Ports}
+ \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_baud_rate_a98682ef7de2714e5bab788a2e2ff1b7f}{R\+S\+T}  {\bfseries {\bfseries \textcolor{keywordflow}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\+\_\+logic}\textcolor{vhdlchar}{ }} 
+\item 
+\hyperlink{class_baud_rate_ab5d0ea9e968d49d94da9db07a979d402}{C\+L\+K}  {\bfseries {\bfseries \textcolor{keywordflow}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\+\_\+logic}\textcolor{vhdlchar}{ }} 
+\item 
+\hyperlink{class_baud_rate_af99e9846fb1525d8781a8861c5405ac6}{N\+Baud}  {\bfseries {\bfseries \textcolor{keywordflow}{in}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\+\_\+logic\+\_\+vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{3} \textcolor{vhdlchar}{ }\textcolor{keywordflow}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} 
+\item 
+\hyperlink{class_baud_rate_a624b7278be72c706bd13baf72645915f}{F\+Baud}  {\bfseries {\bfseries \textcolor{keywordflow}{out}\textcolor{vhdlchar}{ }}} {\bfseries \textcolor{comment}{std\+\_\+logic}\textcolor{vhdlchar}{ }} 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_baud_rate_ab5d0ea9e968d49d94da9db07a979d402}{}\index{Baud\+Rate@{Baud\+Rate}!C\+L\+K@{C\+L\+K}}
+\index{C\+L\+K@{C\+L\+K}!Baud\+Rate@{Baud\+Rate}}
+\subsubsection[{C\+L\+K}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+L\+K} {\bfseries \textcolor{keywordflow}{in}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{comment}{std\+\_\+logic}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}\label{class_baud_rate_ab5d0ea9e968d49d94da9db07a979d402}
+\hypertarget{class_baud_rate_a624b7278be72c706bd13baf72645915f}{}\index{Baud\+Rate@{Baud\+Rate}!F\+Baud@{F\+Baud}}
+\index{F\+Baud@{F\+Baud}!Baud\+Rate@{Baud\+Rate}}
+\subsubsection[{F\+Baud}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+Baud} {\bfseries \textcolor{keywordflow}{out}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{comment}{std\+\_\+logic}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}\label{class_baud_rate_a624b7278be72c706bd13baf72645915f}
+\hypertarget{class_baud_rate_ae4f03c286607f3181e16b9aa12d0c6d4}{}\index{Baud\+Rate@{Baud\+Rate}!I\+E\+E\+E@{I\+E\+E\+E}}
+\index{I\+E\+E\+E@{I\+E\+E\+E}!Baud\+Rate@{Baud\+Rate}}
+\subsubsection[{I\+E\+E\+E}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+E\+E\+E}\hspace{0.3cm}{\ttfamily [Library]}}\label{class_baud_rate_ae4f03c286607f3181e16b9aa12d0c6d4}
+\hypertarget{class_baud_rate_af99e9846fb1525d8781a8861c5405ac6}{}\index{Baud\+Rate@{Baud\+Rate}!N\+Baud@{N\+Baud}}
+\index{N\+Baud@{N\+Baud}!Baud\+Rate@{Baud\+Rate}}
+\subsubsection[{N\+Baud}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\+Baud} {\bfseries \textcolor{keywordflow}{in}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{comment}{std\+\_\+logic\+\_\+vector}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{(}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{3} \textcolor{vhdlchar}{ }\textcolor{keywordflow}{downto}\textcolor{vhdlchar}{ }\textcolor{vhdlchar}{ } \textcolor{vhdldigit}{0} \textcolor{vhdlchar}{ }\textcolor{vhdlchar}{)}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}\label{class_baud_rate_af99e9846fb1525d8781a8861c5405ac6}
+\hypertarget{class_baud_rate_a98682ef7de2714e5bab788a2e2ff1b7f}{}\index{Baud\+Rate@{Baud\+Rate}!R\+S\+T@{R\+S\+T}}
+\index{R\+S\+T@{R\+S\+T}!Baud\+Rate@{Baud\+Rate}}
+\subsubsection[{R\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+S\+T} {\bfseries \textcolor{keywordflow}{in}\textcolor{vhdlchar}{ }} {\bfseries \textcolor{comment}{std\+\_\+logic}\textcolor{vhdlchar}{ }} \hspace{0.3cm}{\ttfamily [Port]}}\label{class_baud_rate_a98682ef7de2714e5bab788a2e2ff1b7f}
+\hypertarget{class_baud_rate_acd03516902501cd1c7296a98e22c6fcb}{}\index{Baud\+Rate@{Baud\+Rate}!std\+\_\+logic\+\_\+1164@{std\+\_\+logic\+\_\+1164}}
+\index{std\+\_\+logic\+\_\+1164@{std\+\_\+logic\+\_\+1164}!Baud\+Rate@{Baud\+Rate}}
+\subsubsection[{std\+\_\+logic\+\_\+1164}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+\_\+logic\+\_\+1164}\hspace{0.3cm}{\ttfamily [Package]}}\label{class_baud_rate_acd03516902501cd1c7296a98e22c6fcb}
+\hypertarget{class_baud_rate_a0f5ecc6613f63d07f7963a97b1b26095}{}\index{Baud\+Rate@{Baud\+Rate}!std\+\_\+logic\+\_\+arith@{std\+\_\+logic\+\_\+arith}}
+\index{std\+\_\+logic\+\_\+arith@{std\+\_\+logic\+\_\+arith}!Baud\+Rate@{Baud\+Rate}}
+\subsubsection[{std\+\_\+logic\+\_\+arith}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+\_\+logic\+\_\+arith}\hspace{0.3cm}{\ttfamily [Package]}}\label{class_baud_rate_a0f5ecc6613f63d07f7963a97b1b26095}
+\hypertarget{class_baud_rate_a598da929e807d58939b47499e8bc9fa8}{}\index{Baud\+Rate@{Baud\+Rate}!std\+\_\+logic\+\_\+unsigned@{std\+\_\+logic\+\_\+unsigned}}
+\index{std\+\_\+logic\+\_\+unsigned@{std\+\_\+logic\+\_\+unsigned}!Baud\+Rate@{Baud\+Rate}}
+\subsubsection[{std\+\_\+logic\+\_\+unsigned}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\+\_\+logic\+\_\+unsigned}\hspace{0.3cm}{\ttfamily [Package]}}\label{class_baud_rate_a598da929e807d58939b47499e8bc9fa8}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+R\+S232\+Read\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D/\hyperlink{_r_s232_read___d_e_p_r_e_c_a_t_e_d_2_baud_rate_8vhd}{Baud\+Rate.\+vhd}\end{DoxyCompactItemize}

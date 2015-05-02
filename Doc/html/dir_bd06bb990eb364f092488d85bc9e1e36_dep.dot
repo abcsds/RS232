@@ -1,0 +1,6 @@
+digraph "RS232Read" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_bd06bb990eb364f092488d85bc9e1e36 [shape=box, label="RS232Read", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_bd06bb990eb364f092488d85bc9e1e36.html"];
+}
